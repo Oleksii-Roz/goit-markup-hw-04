@@ -122,6 +122,7 @@ body {
 .header-bg {
 	background: var(--my-white);
 	border-bottom: 1px solid #ececec;
+	margin: 0 auto;
 }
 
 .header-bg-flex {
