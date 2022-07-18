@@ -206,6 +206,7 @@ body {
 /* ==========Hero. Баннер, кнопка index.html========== */
 .hero {
 	background-color: var(--background-dark-color);
+	margin: 0 auto;
 }
 
 .section.hero {
@@ -317,6 +318,7 @@ body {
 	background: var(--background-dark-color);
 	padding-top: 60px;
 	padding-bottom: 60px;
+	margin: 0 auto;
 }
 
 .logo-footer {
