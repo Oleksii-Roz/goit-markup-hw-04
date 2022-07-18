@@ -278,6 +278,7 @@ body {
 /* ==========Наша команд index.html========== */
 .main-team-bg {
 	background: var(--main-bg);
+	margin: 0 auto;
 }
 
 .title.marging-bottom {
