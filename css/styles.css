@@ -96,16 +96,6 @@ body {
 	padding-bottom: 94px;
 }
 
-.main-item-flex {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 30px;
-}
-
-.main-features-flex-basis {
-	flex-basis: calc((100% - 90px) / 4);
-}
-
 .main-we-doing-flex-basis {
 	flex-basis: calc((100% - 60px) / 3);
 }
@@ -151,6 +141,7 @@ body {
 }
 
 .header-address-item {
+	display: inline;
 	margin-right: 50px;
 }
 
@@ -190,25 +181,68 @@ body {
 }
 
 .header-link {
+	display: inline-flex;
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--second-text-color);
 }
 
+/* .header-link::before {
+	background: #f5f4fa;
+	border-radius: 4px;
+	display: inline-block;
+	content: "";
+	width: 16px;
+	height: 12px;
+	background-image: url(../images/contacts/envelope.svg);
+	background-size: contain;
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-origin: content-box;
+	margin-right: 10px;
+
+	align-items: center;
+} */
+
 .header-link:hover,
 .header-link:focus,
 .header-link:active {
 	color: var(--accent-color);
+
+	fill: var(--accent-color);
 }
 
+.header-link-icon {
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+
+	fill: currentColor;
+}
+
+/* .header-link:hover,
+.header-link:focus {
+	fill: var(--accent-color);
+} */
 /* ==========Main index.html========== */
 /* ==========Hero. Баннер, кнопка index.html========== */
-.hero {
+
+.hero-overlay {
 	background-color: var(--background-dark-color);
+	max-width: 1600px;
+	height: 600px;
+
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
-.section.hero {
+.section.hero-overlay {
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
@@ -264,6 +298,46 @@ body {
 
 .main-basic-first.marging-bottom {
 	margin-bottom: 10px;
+}
+
+.main-item-flex {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.main-features-flex-basis {
+	flex-basis: calc((100% - 90px) / 4);
+}
+
+.main-features-flex-basis::before {
+	background: #f5f4fa;
+	border-radius: 4px;
+	display: block;
+	content: "";
+	width: auto;
+	height: 120px;
+	background-size: 70px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-origin: content-box;
+	margin-bottom: 30px;
+}
+
+.main-features-flex-basis:nth-child(1)::before {
+	background-image: url(../images/key-features/antenna.svg);
+}
+
+.main-features-flex-basis:nth-child(2)::before {
+	background-image: url(../images/key-features/clock.svg);
+}
+
+.main-features-flex-basis:nth-child(3)::before {
+	background-image: url(../images/key-features/diagram.svg);
+}
+
+.main-features-flex-basis:nth-child(4)::before {
+	background-image: url(../images/key-features/astronaut.svg);
 }
 
 /* ==========Чем мы занимаемся index.html========== */
@@ -323,23 +397,18 @@ body {
 	color: var(--my-white);
 }
 
-/* Что бы включить флексы, нужны потом будут. В index.html и portfolio.html убрать примечание с <div class="container div-footer-flex"> В CSS убрать примечание с селектора .div-footer-flex А так же удалить строку display: block; в .a-footer-logo-link Так будет один в один как сейчас только на флексах.
-Жаль, а я заморочился м мучался с этим пару часов не меньше ночью))) */
-
-/* .div-footer-flex {
+.div-footer-flex {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: flex-start;
-} */
 
-/* Что бы включить флексы, нужны потом будут. В index.html и portfolio.html убрать примечание с <div class="container div-footer-flex"> В CSS убрать примечание с селектора .div-footer-flex А так же удалить строку display: block; в .a-footer-logo-link Так будет один в один как сейчас только на флексах.
-Жаль, а я заморочился м мучался с этим пару часов не меньше ночью))) */
+	margin-right: 70px;
+}
 
 .li-footer-item:not(:nth-child(3n)) {
 	margin-bottom: 9px;
 }
-
 .a-footer-logo-link {
 	font-family: Raleway, sans-serif;
 	font-weight: 700;
@@ -347,18 +416,15 @@ body {
 	line-height: 1.19;
 	color: var(--accent-color);
 
-	display: block;
 	margin-bottom: 20px;
 }
 
 .a-footer-link-address {
-	font-style: normal;
 	line-height: 1.71;
 	color: var(--my-white);
 }
 
 .a-footer-link {
-	font-style: normal;
 	line-height: 1.71;
 	color: rgba(255, 255, 255, 0.6);
 }
@@ -370,6 +436,49 @@ body {
 .a-footer-link:focus,
 .a-footer-link:active {
 	color: var(--accent-color);
+}
+
+.footer-all-flex {
+	display: flex;
+	align-items: baseline;
+}
+
+.footer-networks {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+	color: var(--my-white);
+	margin-bottom: 20px;
+}
+
+.footer-social-flex {
+	display: flex;
+	gap: 10px;
+}
+
+.footer-social-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+}
+
+.footer-social-item:hover {
+	color: #ffffff;
+	background-color: #2196f3;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.social-icon {
+	width: 20px;
+	height: 20px;
+	fill: #ffffff;
 }
 
 /* ==========Main portfolio.html========== */
