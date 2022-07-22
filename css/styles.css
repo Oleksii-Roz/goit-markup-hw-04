@@ -482,7 +482,8 @@ body {
 	border-radius: 50%;
 }
 
-.social-item:hover {
+.social-item:hover,
+.social-item:focus {
 	color: #ffffff;
 	background-color: #2196f3;
 	overflow: hidden;
