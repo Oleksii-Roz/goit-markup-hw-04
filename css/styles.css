@@ -21,7 +21,7 @@ ol {
 	margin: 0;
 	padding: 0;
 }
-/*Убираем нижний отступ*/
+
 img {
 	display: block;
 
@@ -38,7 +38,6 @@ button {
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-
 	text-align: center;
 }
 
@@ -51,7 +50,6 @@ body {
 }
 
 /* ==========COMPONENTS========== */
-
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -96,7 +94,8 @@ body {
 	padding-bottom: 94px;
 }
 
-.main-we-doing-flex-basis {
+/* ==========Гибкая сетка для секций сайта========== */
+.main-flex-basis {
 	flex-basis: calc((100% - 60px) / 3);
 }
 
@@ -106,6 +105,10 @@ body {
 
 .main-item-all-services {
 	flex-basis: calc((100% - 60px) / 3);
+}
+
+.clients-flex-basis {
+	flex-basis: calc((100% - 150px) / 6);
 }
 
 /* ==========Header шапка сайта (WebStudio, Студия, Портфолио, Контакты, email, tel) index.html========== */
@@ -185,24 +188,6 @@ body {
 	color: var(--second-text-color);
 }
 
-/* .header-link::before {
-	background: #f5f4fa;
-	border-radius: 4px;
-	display: inline-block;
-	content: "";
-	width: 16px;
-	height: 12px;
-	background-image: url(../images/contacts/envelope.svg);
-	background-size: contain;
-
-	background-repeat: no-repeat;
-	background-position: center;
-	background-origin: content-box;
-	margin-right: 10px;
-
-	align-items: center;
-} */
-
 .header-link:hover,
 .header-link:focus,
 .header-link:active {
@@ -219,15 +204,11 @@ body {
 	fill: currentColor;
 }
 
-/* .header-link:hover,
-.header-link:focus {
-	fill: var(--accent-color);
-} */
 /* ==========Main index.html========== */
 /* ==========Hero. Баннер, кнопка index.html========== */
 
 .hero-overlay {
-	background-color: var(--background-dark-color);
+	background-color: #c4c4c4;
 	max-width: 1600px;
 	height: 600px;
 
@@ -239,7 +220,7 @@ body {
 	background-size: cover;
 }
 
-.section.hero-overlay {
+.hero-overlay.section {
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
@@ -380,6 +361,40 @@ body {
 	line-height: 1.19;
 	text-align: center;
 	color: var(--second-text-color);
+	margin-bottom: 16px;
+}
+
+.main-team-social-item {
+	color: #afb1b8;
+	background-color: #ffffff;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+/* ==========Постоянные клиенты index.html========== */
+.clients {
+	width: 100%;
+	height: 92px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #afb1b8;
+	background-color: #ffffff;
+}
+
+.clients:hover,
+.clients:focus {
+	color: #2196f3;
+	border: 1px solid #2196f3;
+}
+
+.clients-icon {
+	width: 106px;
+	height: 60px;
+	fill: currentColor;
 }
 
 /* ==========Footer Подвал (адрес, почта, телефон) index.html==========  */
@@ -449,12 +464,13 @@ body {
 	margin-bottom: 20px;
 }
 
-.footer-social-flex {
+.social-flex {
 	display: flex;
+	justify-content: center;
 	gap: 10px;
 }
 
-.footer-social-item {
+.social-item {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -466,7 +482,7 @@ body {
 	border-radius: 50%;
 }
 
-.footer-social-item:hover {
+.social-item:hover {
 	color: #ffffff;
 	background-color: #2196f3;
 	overflow: hidden;
@@ -478,6 +494,13 @@ body {
 	height: 20px;
 
 	fill: currentColor;
+}
+
+.main-team-social-item {
+	color: #afb1b8;
+	background-color: #ffffff;
+	overflow: hidden;
+	border-radius: 50%;
 }
 
 /* ==========Main portfolio.html========== */
