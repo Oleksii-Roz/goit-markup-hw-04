@@ -130,10 +130,6 @@ body {
 	align-items: center;
 }
 
-.header-nav-link.current {
-	color: var(--accent-color);
-}
-
 .header-menu-second {
 	display: flex;
 	align-items: center;
@@ -176,7 +172,8 @@ body {
 
 .header-nav-link:hover,
 .header-nav-link:focus,
-.header-nav-link:active {
+.header-nav-link:active,
+.header-nav-link.current {
 	color: var(--accent-color);
 }
 
@@ -500,17 +497,12 @@ body {
 
 .main-filters-btn:hover,
 .main-filters-btn:focus,
-.main-filters-btn:active {
+.main-filters-btn:active,
+.main-filters-btn.current {
 	color: var(--my-white);
 	background: var(--accent-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
-}
-
-.main-filters-btn.current {
-	background-color: var(--accent-color);
-	color: var(--my-white);
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .main-filters-flex {
