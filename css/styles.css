@@ -175,7 +175,6 @@ body {
 
 .header-nav-link:hover,
 .header-nav-link:focus,
-.header-nav-link:active,
 .header-nav-link.current {
 	color: var(--accent-color);
 }
@@ -189,8 +188,7 @@ body {
 }
 
 .header-link:hover,
-.header-link:focus,
-.header-link:active {
+.header-link:focus {
 	color: var(--accent-color);
 
 	fill: var(--accent-color);
@@ -255,8 +253,7 @@ body {
 }
 
 .hero-btn:hover,
-.hero-btn:focus,
-.hero-btn:active {
+.hero-btn:focus {
 	background: #188ce8;
 }
 
@@ -443,10 +440,8 @@ body {
 
 .a-footer-link-address:hover,
 .a-footer-link-address:focus,
-.a-footer-link-address:active,
 .a-footer-link:hover,
-.a-footer-link:focus,
-.a-footer-link:active {
+.a-footer-link:focus {
 	color: var(--accent-color);
 }
 
@@ -521,7 +516,6 @@ body {
 
 .main-filters-btn:hover,
 .main-filters-btn:focus,
-.main-filters-btn:active,
 .main-filters-btn.current {
 	color: var(--my-white);
 	background: var(--accent-color);
@@ -571,6 +565,7 @@ body {
 	display: block;
 }
 
-.main-item-all-services-link:hover {
+.main-item-all-services-link:hover,
+.main-item-all-services-link:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
