@@ -379,7 +379,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	color: #afb1b8;
-	background-color: #ffffff;
 }
 
 .clients:hover,
@@ -407,11 +406,6 @@ body {
 }
 
 .div-footer-flex {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: flex-start;
-
 	margin-right: 70px;
 }
 
@@ -426,6 +420,7 @@ body {
 	color: var(--accent-color);
 
 	margin-bottom: 20px;
+	display: block;
 }
 
 .a-footer-link-address {
@@ -481,8 +476,6 @@ body {
 .social-item:focus {
 	color: #ffffff;
 	background-color: #2196f3;
-	overflow: hidden;
-	border-radius: 50%;
 }
 
 .social-icon {
@@ -520,7 +513,6 @@ body {
 	color: var(--my-white);
 	background: var(--accent-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-	border-radius: 4px;
 }
 
 .main-filters-flex {
