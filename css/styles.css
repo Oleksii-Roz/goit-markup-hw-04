@@ -360,13 +360,6 @@ body {
 	margin-bottom: 16px;
 }
 
-.main-team-social-item {
-	color: var(--social-logo);
-	background-color: var(--my-white);
-	overflow: hidden;
-	border-radius: 50%;
-}
-
 /* ==========Постоянные клиенты index.html========== */
 .clients {
 	width: 100%;
@@ -404,7 +397,7 @@ body {
 	color: var(--my-white);
 }
 
-.div-footer-flex {
+.div-footer-logo-nav {
 	margin-right: 70px;
 }
 
@@ -488,7 +481,6 @@ body {
 	color: var(--social-logo);
 	background-color: var(--my-white);
 	overflow: hidden;
-	border-radius: 50%;
 }
 
 /* ==========Main portfolio.html========== */
